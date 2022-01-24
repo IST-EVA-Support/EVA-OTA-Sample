@@ -39,7 +39,7 @@ Please copy the `otaAgent` to `/opt/adlink/eva/bin`
 ### Ubuntu (amd64/aarch64)
 Compiling the reference code by meson script
 ```bash
-git-clone 
+git-clone https://github.com/IST-EVA-Support/EVA-OTA-Sample.git
 cd ADLINK_Agent
 meson build
 ninja -C build
