@@ -21,16 +21,21 @@ Examples are provided for OTA procedure. See the API reference section for detai
    `To be determined `
 
 ## Ubuntu Installation
-* Install ADLINK managebility runtime library 4.0.3 or newer version
+* Install ADLINK Managebility runtime library 4.0.X or newer version
 * Install ADLINK EVA runtime library 4.X or newer version
   
-## OTA Agent Download link
-Please copy the `otaAgent` to `/opt/adlink/eva/bin`
+## OTA Download Agent link
+Please downlad the excutable file and copy the `otaAgent` to the path under `/opt/adlink/eva/bin`
+* Ubuntu X86
+* ARM (aarch64)
+ 
+## EVA pipeline module link
+Please downlad the shared library copy the `libpipelineUpdComp.so` to the path under `/usr/lib/OTA`
 * Ubuntu X86
 * ARM (aarch64)
   
 ## Compiling
-  need a recent version of Meson installed, see
+  Sample need a recent version of Meson installed, please see as following.
     http://mesonbuild.com/Getting-meson.html
   
 ### Windows
@@ -47,27 +52,35 @@ ninja -C build
 Creating the `da.state` file  under /data/carota/
 cd ADLINK_Agent
 run the `AgentScript.sh` 
-  
+ 
+Running the ADLINK OTA agent
+
+ ```c
+ // Running the slinet upadate
+./AdlinkAgent -s
+```
+   
 <h2>
 
-## Example description and notes
+## Sample description and notes
 Please make sure the ADLINK managebility and EVA library have been installation successfully.
->> Cause Carota Agent need to get the `upgrade.result ` info to report,
-we suggest that Carota Agent will be brought up by Adlink Agent
+>> It is because that Carota Agent need to get the `upgrade.result ` info to report,
+we suggest that `otaAgent` will be start up by `Adlink Agent`
 when device bootup.  
->> Check the ADLINK device information
-Run the ADLINK_Agent command 
+ 
+>> Check the ADLINK device information.
+Please run the ADLINK_Agent command 
 `./AdlinkAgent -i`
   The ADLINK egde device will show device informarion. The information will be used for update procedure.
   
-  
+>> The ADLINK edge device need to register the OTA project token. Please contact the service provider.
+It is recommended to write the project token into NVRAM. This method can avoid the
+change of update leads to the loss of project token information. Once this information is lost, it will cause 
+Agent behaves unexpectedly. <h2>
+
+
 ## See also
-
-
-
-
-  
-  
-
  
-  
+ * EVA OTA protal and scenario
+ * EVA Managebility SDK
+
