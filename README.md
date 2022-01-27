@@ -49,7 +49,7 @@ cd ADLINK_Agent
 meson build
 ninja -C build
 ```
-Creating the `da.state` file  under /data/carota/
+Creating the repository under `/data/carota/`
 cd ADLINK_Agent
 run the `AgentScript.sh` 
  
@@ -64,7 +64,7 @@ Running the ADLINK OTA agent
 
 ## Sample description and notes
 Please make sure the ADLINK managebility and EVA library have been installation successfully.
->> It is because that Carota Agent need to get the `upgrade.result ` info to report,
+>> It is because that `otaAgent` need to get the `upgrade.result ` info to report,
 we suggest that `otaAgent` will be start up by `Adlink Agent`
 when device bootup.  
  
