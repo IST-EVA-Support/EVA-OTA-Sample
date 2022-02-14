@@ -26,8 +26,8 @@ Examples are provided for OTA procedure. See the API reference section for detai
   
 ## OTA Download Agent link
 Please downlad the excutable file and copy the `otaAgent` to the path under `/opt/adlink/eva/bin`
-* Ubuntu X86
-* ARM (aarch64)
+* Ubuntu X86    ![Download link](https://ampro1-my.sharepoint.com/:u:/g/personal/nathanch_tu_adlinktech_com/ETNNvk58tKxFsjdSjfzUIjoBuFj60WsPas22m5cxaUMmcA?e=Z2JFj0)
+* ARM (aarch64) ![Download link](https://ampro1-my.sharepoint.com/:u:/r/personal/nathanch_tu_adlinktech_com/Documents/OTA/DownloadAgent/aarch64/otaAgent?csf=1&web=1&e=cSNrAm)
  
 ## EVA pipeline module link
 Please downlad the shared library copy the `libpipelineUpdComp.so` to the path under `/usr/lib/OTA`
