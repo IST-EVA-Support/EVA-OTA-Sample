@@ -82,6 +82,8 @@ Agent behaves unexpectedly. <h2>
 ## See also
  
  * EVA OTA protal and scenario
+ https://eva-support.adlinktech.com/docs/adlink-agent-carota
  * EVA Managebility SDK
+ https://eva-support.adlinktech.com/docs/manageability-library-user-guide
  
 
